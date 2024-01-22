@@ -25,7 +25,7 @@ Before(async () => {
 });
 
 After(async ({ pickle, result }) => {
-    console.log('Browser closed after each scenario, and result?.status');
+    // console.log('Browser closed after each scenario, and result?.status');
     // screenshot
     if (result?.status == Status.FAILED) {
         await pageFixture.page.screenshot({
